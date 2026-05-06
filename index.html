@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дані користувача</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Дані користувача</h2>
+    
+    <div class="form-group">
+        <label>Ваше ім'я</label>
+        <input type="text" id="userName" placeholder="Наприклад: Макс">
+    </div>
+    
+    <div class="form-group">
+        <label>Ваш вік</label>
+        <input type="number" id="userAge" placeholder="0" min="0">
+    </div>
+    
+    <div class="form-group">
+        <label>Улюблене хобі</label>
+        <input type="text" id="userHobby" placeholder="Наприклад: Програмування">
+    </div>
+    
+    <div class="form-group">
+        <label>Досвід у хобі (у роках)</label>
+        <input type="number" id="userExperience" placeholder="0" min="0">
+    </div>
+
+    <div class="form-group">
+        <label>Тема оформлення</label>
+        <select id="themeSelect">
+            <option value="Default">Світла (Default)</option>
+            <option value="ShadowGrey">Тіньовий сірий (Shadow Grey)</option>
+            <option value="SoftPeach">Ніжний персиковий (Soft Peach)</option>
+        </select>
+    </div>
+
+    <button id="runBtn">Сформувати результат</button>
+
+    <div id="result-container">
+        
+    </div>
+</div>
+
+<script src="dist/main.js"></script>
+</body>
+</html>
